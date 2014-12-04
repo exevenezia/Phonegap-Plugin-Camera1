@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" type="text/css"  />
+        <link rel="stylesheet" href="css/index.css" type="text/css"  />
+           <!-- Archivos .js -->
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Titulo -->
+        <title>Phonegap: Ejemplo Plugin Camera</title>
+    </head>
+    <body>
+        <!--  Pagina nueva y se identifico con un ID="" -->
+        <div data-role="page" id="index" data-title="index">
+            <header data-role="header" data-position="fixed">
+                 <a href="#" data-icon="home">Home</a>
+                <h1>Phonegap</h1>
+                <a href="http://exevenezia.blogspot.com.ar/" data-icon="star">Contacto</a>
+            </header>
+        <!-- Contenido  -->
+
+        <div id="content" style="margin-top: 100px;">  
+            <h1>Phonegap: Ejemplo Plugin Camera 1</h1>  
+                 <button id="takePhoto">SACAR FOTO</button>  
+                     <img id="photo" src="">  
+                <button id="sendPhoto">ENVIAR FOTO</button>  
+        </div>
+
+        <!-- Footer -->
+            <footer data-role="footer" class="ui-bar" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="info">Informacion</a></li>
+                          <li><a href="#" data-icon="alert">Reporte</a></li>
+                    </ul>
+                </div>
+                <h4>exevenezia.blogspot.com.ar &copy; 2014</h4>
+            </footer>  
+         
+           <!-- Archivos .js para el plugin de la camera -->
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    
+    </div>
+    </body>
+</html>
